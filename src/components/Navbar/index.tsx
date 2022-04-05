@@ -1,15 +1,18 @@
-
-import * as S from './styles'
+import * as S from './styles';
 import { FaBars } from 'react-icons/fa'
 
-const Navbar = () => {
+interface Props {
+    toggle: () => void;
+}
+
+const Navbar = ({ toggle }: Props) => {
     return (
         <>
             <S.Nav>
                 <S.NavbarContainer>
 
-                    <S.NavLogo to='/'>Dona</S.NavLogo>
-                    <S.MobileIcon>
+                    <S.NavLogo to='/'>Dolla</S.NavLogo>
+                    <S.MobileIcon onClick={toggle}>
                         <FaBars />
                     </S.MobileIcon>
 
