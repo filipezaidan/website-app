@@ -20,7 +20,6 @@ export const Container = styled.aside`
     transition : 0.3s ease-in-out;
     opacity: ${({ isOpen }: Props) => (isOpen ? '100%' : '0')};
     top: ${({ isOpen }: Props) => (isOpen ? '0' : '-100%')};
-
 `
 export const CloseIcon = styled(FaTimes)`
    color : #fff ;
@@ -33,7 +32,6 @@ export const Icon = styled.div`
     font-size:2rem;
     cursor: pointer;
     outline: none;
-
 `
 export const Wrapper = styled.div`
    color: #fff ;
@@ -47,8 +45,6 @@ export const Menu = styled.div`
     @media screen and (max-width: 480px){
         grid-template-rows: repeat(6, 80px);
     }
-
-
 `;
 export const Link = styled(LinkS)`
     display: flex;
@@ -69,7 +65,6 @@ export const Link = styled(LinkS)`
 export const ButtonWrapper = styled.div`
     display: flex ;
     justify-content: center;
-
 `
 export const Route = styled(LinkR)`
     border-radius : 50px ;
