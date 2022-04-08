@@ -1,8 +1,10 @@
-import * as S from './styles'
-import Video from '../../assets/video/video.mp4'
 import { useState } from 'react'
 import { Button } from '../Button/styles'
+import * as S from './styles'
+import Video from '../../assets/video/video.mp4'
+
 function HeroSection() {
+
     const [hover, setHover] = useState(false)
 
     const onHover = () => {
@@ -32,12 +34,13 @@ function HeroSection() {
                         to='signup'
                         onMouseEnter={onHover}
                         onMouseLeave={onHover}
+                        primary
+                        dark
                     >
                         Get started {hover ? <S.ArrowForward /> : <S.ArrowRight />}
                     </Button>
                 </S.HeroBtnWrapper>
             </S.HeroContent>
-
         </S.Container>
     )
 }

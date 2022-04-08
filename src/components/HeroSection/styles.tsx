@@ -19,7 +19,6 @@ export const HeroBg = styled.div`
     overflow: hidden;
 `
 export const VideoBg = styled.video`
-    background: #232a34;
     height: 100%;
     width: 100%;
     object-fit: cover;
