@@ -10,6 +10,17 @@ export const Container = styled.section`
     height: 800px;
     position: relative;
     z-index: 1;
+    :before {
+     content: '';
+     position: absolute;
+     inset: 0;
+     background: linear-gradient(
+            180deg,
+            rgba(0,0,0,0.2) 0%,
+            rgba(0,0,0,0.6) 100%), 
+            linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent
+        );
+    }  
 `
 export const HeroBg = styled.div`
     position: absolute;
