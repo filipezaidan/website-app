@@ -1,9 +1,6 @@
 import svg1 from '../assets/images/svg-1.svg';
 import svg2 from '../assets/images/svg-2.svg';
 import svg3 from '../assets/images/svg-3.svg';
-import svg4 from '../assets/images/svg-4.svg';
-import svg5 from '../assets/images/svg-5.svg';
-import svg6 from '../assets/images/svg-6.svg';
 
 export interface InfoDataProps {
     id: string;
@@ -25,9 +22,9 @@ export interface InfoDataProps {
 export const InfoData: InfoDataProps[] = [
     {
         id: 'about',
-        lightBg: false,
-        lightText: true,
-        lightTextDesc: true,
+        lightBg: true,
+        lightText: false,
+        lightTextDesc: false,
         topLine: 'Premium Bank',
         headLine: 'Unlimited Transactions with zero fees',
         description:
@@ -38,15 +35,17 @@ export const InfoData: InfoDataProps[] = [
         imgStart: false,
         img: svg1,
         alt: 'Car',
-        dark: true,
-        primary: true,
-        darkText: false,
+        dark: false,
+        primary: false,
+        darkText: true
+
     },
     {
         id: 'discover',
-        lightBg: true,
-        lightText: false,
-        lightTextDesc: false,
+
+        lightBg: false,
+        lightText: true,
+        lightTextDesc: true,
         topLine: 'Unlimited Access',
         headLine: 'Login to your account at any time',
         description:
@@ -56,27 +55,27 @@ export const InfoData: InfoDataProps[] = [
         imgStart: true,
         img: svg2,
         alt: 'Piggybank',
-        dark: false,
-        primary: false,
-        darkText: true
+        dark: true,
+        primary: true,
+        darkText: false,
     },
     {
-        id: 'about',
-        lightBg: false,
-        lightText: true,
-        lightTextDesc: true,
-        topLine: 'Premium Bank',
-        headLine: 'Unlimited Transactions with zero fees',
+        id: 'signup',
+        lightBg: true,
+        lightText: false,
+        lightTextDesc: false,
+        topLine: 'Join our Team',
+        headLine: 'Creating an account is extremely easy',
         description:
-            `Get access to our exclusive app that allows
-        you to send unlimited transactions without 
-        getting charged any fees`,
+            `Get everything set up and ready in 
+            under 10 minutes. All you need to do 
+            is add your information and you are ready to go.`,
         buttonLabel: 'Get started',
         imgStart: false,
         img: svg3,
-        alt: 'Car',
-        dark: true,
-        primary: true,
-        darkText: false
+        alt: 'Paper',
+        dark: false,
+        primary: false,
+        darkText: true
     },
 ]
